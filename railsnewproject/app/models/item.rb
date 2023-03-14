@@ -1,5 +1,5 @@
 class Item < ApplicationRecord
-    has_many :modifiers, through: :item_modifiers
+
     belongs_to :category, optional:true
     has_one :rating, as: :rateable
 
