@@ -1,0 +1,453 @@
+Started GET "/" for 127.0.0.1 at 2023-03-11 16:52:51 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.2ms | Allocations: 831)
+Completed 200 OK in 29ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 7225)
+
+
+  [1m[35m (10.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20230311112342)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112342"]]
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateItems (20230311112522)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112522"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateModifiers (20230311112551)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "modifiers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112551"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateItemmodifiers (20230311112636)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "itemmodifiers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112636"]]
+  [1m[36mTRANSACTION (4.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-11 11:29:17.588275"], ["updated_at", "2023-03-11 11:29:17.588275"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "ratings"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItemmodifiers (20230311112636)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "itemmodifiers"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112636"]]
+  [1m[36mTRANSACTION (10.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateModifiers (20230311112551)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "modifiers"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112551"]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItems (20230311112522)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "items"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112522"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20230311112342)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE "categories"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112342"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCategories (20230311112342)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "categories" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112342"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateItems (20230311112522)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "items" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "price" integer, "category_id" integer, "stock_quantity" integer, "status" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112522"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateModifiers (20230311112551)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "modifiers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "price" integer, "stock_quantity" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112551"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateItemmodifiers (20230311112636)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "itemmodifiers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_id" integer, "modifiers_id" integer, "status" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112636"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (2.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2023-03-11 17:14:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.9ms | Allocations: 727)
+Completed 200 OK in 19ms (Views: 9.1ms | ActiveRecord: 0.0ms | Allocations: 5959)
+
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "phone"], ["created_at", "2023-03-11 11:54:58.632128"], ["updated_at", "2023-03-11 11:54:58.632128"]]
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.4ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "laptop"], ["created_at", "2023-03-11 11:55:20.065463"], ["updated_at", "2023-03-11 11:55:20.065463"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "earbirds"], ["created_at", "2023-03-11 11:56:30.218050"], ["updated_at", "2023-03-11 11:56:30.218050"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "neckbands"], ["created_at", "2023-03-11 11:57:18.852065"], ["updated_at", "2023-03-11 11:57:18.852065"]]
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mCategory Create (0.5ms)[0m  [1m[32mINSERT INTO "categories" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "smartwatchs"], ["created_at", "2023-03-11 11:57:54.672638"], ["updated_at", "2023-03-11 11:57:54.672638"]]
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "samsungA50"], ["price", 2000], ["category_id", 1], ["stock_quantity", 5], ["status", 1], ["created_at", "2023-03-11 12:05:29.425574"], ["updated_at", "2023-03-11 12:05:29.425574"]]
+  [1m[36mTRANSACTION (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "apple 14"], ["price", 20000], ["category_id", 1], ["stock_quantity", 5], ["status", 1], ["created_at", "2023-03-11 12:07:14.586026"], ["updated_at", "2023-03-11 12:07:14.586026"]]
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "lenovo"], ["price", 30000], ["category_id", 2], ["stock_quantity", 10], ["status", 1], ["created_at", "2023-03-11 12:08:04.266691"], ["updated_at", "2023-03-11 12:08:04.266691"]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "hp"], ["price", 40000], ["category_id", 2], ["stock_quantity", 10], ["status", 1], ["created_at", "2023-03-11 12:08:50.336352"], ["updated_at", "2023-03-11 12:08:50.336352"]]
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "boat"], ["price", 400], ["category_id", 3], ["stock_quantity", 11], ["status", 1], ["created_at", "2023-03-11 12:09:39.400273"], ["updated_at", "2023-03-11 12:09:39.400273"]]
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "noise"], ["price", 1000], ["category_id", 3], ["stock_quantity", 14], ["status", 1], ["created_at", "2023-03-11 12:11:10.141890"], ["updated_at", "2023-03-11 12:11:10.141890"]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "boat"], ["price", 800], ["category_id", 4], ["stock_quantity", 8], ["status", 1], ["created_at", "2023-03-11 12:12:06.004582"], ["updated_at", "2023-03-11 12:12:06.004582"]]
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.4ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "oneplus"], ["price", 900], ["category_id", 4], ["stock_quantity", 8], ["status", 1], ["created_at", "2023-03-11 12:12:26.663596"], ["updated_at", "2023-03-11 12:12:26.663596"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "apple"], ["price", 19000], ["category_id", 5], ["stock_quantity", 810], ["status", 1], ["created_at", "2023-03-11 12:13:41.504431"], ["updated_at", "2023-03-11 12:13:41.504431"]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mItem Create (0.3ms)[0m  [1m[32mINSERT INTO "items" ("name", "price", "category_id", "stock_quantity", "status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "oneplus"], ["price", 11000], ["category_id", 5], ["stock_quantity", 810], ["status", 1], ["created_at", "2023-03-11 12:14:03.821846"], ["updated_at", "2023-03-11 12:14:03.821846"]]
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "samsung m33"], ["price", 3000], ["stock_quantity", 6], ["created_at", "2023-03-11 12:20:36.531272"], ["updated_at", "2023-03-11 12:20:36.531272"]]
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "apple 13"], ["price", 33000], ["stock_quantity", 8], ["created_at", "2023-03-11 12:21:06.210452"], ["updated_at", "2023-03-11 12:21:06.210452"]]
+  [1m[36mTRANSACTION (50.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "samsung m21"], ["price", 2000], ["stock_quantity", 8], ["created_at", "2023-03-11 12:21:40.456032"], ["updated_at", "2023-03-11 12:21:40.456032"]]
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "apple 12"], ["price", 40000], ["stock_quantity", 9], ["created_at", "2023-03-11 12:22:01.984336"], ["updated_at", "2023-03-11 12:22:01.984336"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.6ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "lenovo i3"], ["price", 10000], ["stock_quantity", 9], ["created_at", "2023-03-11 12:22:46.284215"], ["updated_at", "2023-03-11 12:22:46.284215"]]
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "lenovo i5"], ["price", 10000], ["stock_quantity", 9], ["created_at", "2023-03-11 12:22:56.288632"], ["updated_at", "2023-03-11 12:22:56.288632"]]
+  [1m[36mTRANSACTION (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "hp i3"], ["price", 20000], ["stock_quantity", 10], ["created_at", "2023-03-11 12:23:23.835856"], ["updated_at", "2023-03-11 12:23:23.835856"]]
+  [1m[36mTRANSACTION (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "hp i5"], ["price", 26000], ["stock_quantity", 12], ["created_at", "2023-03-11 12:23:44.396985"], ["updated_at", "2023-03-11 12:23:44.396985"]]
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "boat 330"], ["price", 800], ["stock_quantity", 6], ["created_at", "2023-03-11 12:24:29.686145"], ["updated_at", "2023-03-11 12:24:29.686145"]]
+  [1m[36mTRANSACTION (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "boat 230"], ["price", 900], ["stock_quantity", 6], ["created_at", "2023-03-11 12:24:43.110707"], ["updated_at", "2023-03-11 12:24:43.110707"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.6ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "noise a series"], ["price", 1000], ["stock_quantity", 7], ["created_at", "2023-03-11 12:25:25.100782"], ["updated_at", "2023-03-11 12:25:25.100782"]]
+  [1m[36mTRANSACTION (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "noise b series"], ["price", 1000], ["stock_quantity", 7], ["created_at", "2023-03-11 12:25:35.396241"], ["updated_at", "2023-03-11 12:25:35.396241"]]
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "boat a "], ["price", 900], ["stock_quantity", 9], ["created_at", "2023-03-11 12:26:31.663966"], ["updated_at", "2023-03-11 12:26:31.663966"]]
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "boat b"], ["price", 500], ["stock_quantity", 9], ["created_at", "2023-03-11 12:26:45.991233"], ["updated_at", "2023-03-11 12:26:45.991233"]]
+  [1m[36mTRANSACTION (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.4ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "oneplus  a"], ["price", 800], ["stock_quantity", 19], ["created_at", "2023-03-11 12:27:20.803024"], ["updated_at", "2023-03-11 12:27:20.803024"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "oneplus  b"], ["price", 800], ["stock_quantity", 13], ["created_at", "2023-03-11 12:27:46.288237"], ["updated_at", "2023-03-11 12:27:46.288237"]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "apple series 3"], ["price", 28000], ["stock_quantity", 8], ["created_at", "2023-03-11 12:28:15.913000"], ["updated_at", "2023-03-11 12:28:15.913000"]]
+  [1m[36mTRANSACTION (10.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "apple series 4"], ["price", 38000], ["stock_quantity", 10], ["created_at", "2023-03-11 12:28:42.021751"], ["updated_at", "2023-03-11 12:28:42.021751"]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.3ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "firebolt a"], ["price", 12000], ["stock_quantity", 11], ["created_at", "2023-03-11 12:29:14.948428"], ["updated_at", "2023-03-11 12:29:14.948428"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModifier Create (0.7ms)[0m  [1m[32mINSERT INTO "modifiers" ("name", "price", "stock_quantity", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "firebolt b"], ["price", 14000], ["stock_quantity", 11], ["created_at", "2023-03-11 12:29:33.329067"], ["updated_at", "2023-03-11 12:29:33.329067"]]
+  [1m[36mTRANSACTION (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mModifier Load (0.5ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers"[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items"[0m
+  [1m[36mModifier Load (0.5ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers"[0m
+Started GET "/" for 127.0.0.1 at 2023-03-11 21:16:20 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 727)
+Completed 200 OK in 22ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5959)
+
+
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (phone) ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "smartwatchs"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "phone"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."name" = ? ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["name", "samsung"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."name" = ? ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["name", "boat"], ["LIMIT", 1]]
+  [1m[36mModifier Load (0.5ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" IN (?, ?) ORDER BY "categories"."created_at" ASC[0m  [["id", 1], ["id", 4]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" BETWEEN ? AND ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["id", 1], ["id", 4], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."id" IN (?, ?) ORDER BY "categories"."created_at" ASC[0m  [["id", 1], ["id", 4]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" DESC LIMIT ?[0m  [["LIMIT", 3]]
+  [1m[36mModifier Load (0.4ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC LIMIT ?[0m  [["LIMIT", 2]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" DESC, "categories"."name" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "phone"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "laptop"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "pen"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "laptop"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."name" = ? ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["name", "apple"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "phone"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "phone"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["name", "phone"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC[0m  [["name", "phone"]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE "categories"."name" = ? ORDER BY "categories"."created_at" ASC[0m  [["name", "laptop"]]
+Scoped order is ignored, it's forced to be batch order.
+  [1m[36mCategory Load (0.4ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT ?[0m  [["LIMIT", 1000]]
+Scoped order is ignored, it's forced to be batch order.
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."id" ASC LIMIT ?[0m  [["LIMIT", 1000]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (price>1000) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (price = 11000) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items" WHERE (price = 11000)[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (price >11000) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items" WHERE (price >11000)[0m
+  [1m[36mItem Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items" WHERE (price >50)[0m
+  [1m[36mItem Load (0.9ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name a%) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories"."name" FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories"."name" FROM "categories" WHERE (name: a%) ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mCategory Load (0.5ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (name>a%) ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 5]]
+  [1m[36mItem Pluck (0.3ms)[0m  [1m[34mSELECT "items"."id" FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (category_id=5) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=oneplus) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=oneplus) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=oneplus) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (boat) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (oneplus) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=oneplus) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Pluck (0.2ms)[0m  [1m[34mSELECT "items"."id" FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "ratings" ON "ratings"."item_id" = "items"."id" WHERE (ratings.rating >= 4) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (id=1) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (id=1) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (id=1) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (id=1) ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (id=1) ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" WHERE (id=1) ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=a%) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=a) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=apple) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.7ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (a%) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (appple) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (7.0ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name=a%) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."name" = ? ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["name", "a%"], ["LIMIT", 1]]
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name:a%) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name= a%) ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mModifier Load (0.4ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" ASC[0m
+  [1m[36mModifier Load (0.3ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" ASC, "modifier_at" DESC[0m
+  [1m[36mModifier Load (0.3ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" ASC, "modifiers"."id" DESC[0m
+  [1m[36mModifier Load (0.8ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" ASC, desc[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC, "items"."created_at" DESC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC, created_at DESC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."id" = ? ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  [1m[36mModifier Load (0.3ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name like 'a%') ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name like 'a%') ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.6ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (rating= >4) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "items" WHERE (rating < 4)[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "ratings" ON "ratings"."item_id" = "items"."id" WHERE (ratings.rating >= 4) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (1.0ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "ratings" ON "ratings"."item_id" = "items"."id" WHERE (ratings.rating >= 4) ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRating Load (0.5ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."item_id" = ? ORDER BY "ratings"."created_at" ASC LIMIT ?[0m  [["item_id", 1], ["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRating Load (0.4ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."item_id" = ? ORDER BY "ratings"."created_at" ASC LIMIT ?[0m  [["item_id", 1], ["LIMIT", 1]]
+  [1m[36mItemmodifier Load (0.2ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mItemmodifier Load (0.1ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mItemmodifier Load (0.2ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mItemmodifier Load (0.1ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mModifier Load (0.2ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mRating Load (0.7ms)[0m  [1m[34mSELECT "ratings".* FROM "ratings" WHERE "ratings"."rateable_id" = ? AND "ratings"."rateable_type" = ? ORDER BY "ratings"."created_at" ASC LIMIT ?[0m  [["rateable_id", 1], ["rateable_type", "Item"], ["LIMIT", 1]]
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mModifier Load (0.3ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mItem Load (0.8ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >= 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mItem Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "items".* FROM "items" ORDER BY "items"."created_at" ASC) subquery_for_count[0m
+  [1m[36mItemmodifier Load (0.2ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mItemmodifier Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "rating_id" AS "rating_id" FROM "itemmodifiers" GROUP BY "rating_id" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT DISTINCT "items".* FROM "items" WHERE "items"."status" = ? AND "items"."price" BETWEEN ? AND ? ORDER BY "items"."created_at" ASC[0m  [["status", 1], ["price", 10], ["price", 20]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" GROUP BY "categories"."id" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."category_id" IN (?, ?, ?, ?, ?) ORDER BY "items"."created_at" ASC[0m  [["category_id", 1], ["category_id", 2], ["category_id", 3], ["category_id", 4], ["category_id", 5]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (ratings.rating >=4) /* loading for inspect */ ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (ratings.rating >=4) /* loading for inspect */ ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35mSQL (0.4ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."created_at" AS t1_r2, "ratings"."updated_at" AS t1_r3 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >=4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mCategory Load (0.6ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItemmodifier Load (0.4ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mModifier Load (0.2ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (ratings.rating >=4) /* loading for inspect */ ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (ratings.rating >=4) /* loading for inspect */ ORDER BY "items"."created_at" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mItem Load (1.1ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >= 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mItem Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "items".* FROM "items" ORDER BY "items"."created_at" ASC) subquery_for_count[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."created_at" AS t1_r2, "ratings"."updated_at" AS t1_r3 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >=4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+Started GET "/" for 127.0.0.1 at 2023-03-13 11:40:37 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.8ms | Allocations: 727)
+Completed 200 OK in 23ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 5961)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "ratings"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.3ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "rateable_type" varchar, "rateable_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_ratings_on_rateable" ON "ratings" ("rateable_type", "rateable_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."rateable_type" AS t1_r2, "ratings"."rateable_id" AS t1_r3, "ratings"."created_at" AS t1_r4, "ratings"."updated_at" AS t1_r5 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >=4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."rateable_type" AS t1_r2, "ratings"."rateable_id" AS t1_r3, "ratings"."created_at" AS t1_r4, "ratings"."updated_at" AS t1_r5 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >=4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."rateable_type" AS t1_r2, "ratings"."rateable_id" AS t1_r3, "ratings"."created_at" AS t1_r4, "ratings"."updated_at" AS t1_r5 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >2) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mItem Load (0.3ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name like 'A%') ORDER BY "items"."created_at" ASC[0m
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" GROUP BY "categories"."id" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."category_id" IN (?, ?, ?, ?, ?) ORDER BY "items"."created_at" ASC[0m  [["category_id", 1], ["category_id", 2], ["category_id", 3], ["category_id", 4], ["category_id", 5]]
+  [1m[35mSQL (0.6ms)[0m  [1m[34mSELECT "categories"."id" AS t0_r0, "categories"."name" AS t0_r1, "categories"."created_at" AS t0_r2, "categories"."updated_at" AS t0_r3, "items"."id" AS t1_r0, "items"."name" AS t1_r1, "items"."price" AS t1_r2, "items"."category_id" AS t1_r3, "items"."stock_quantity" AS t1_r4, "items"."status" AS t1_r5, "items"."created_at" AS t1_r6, "items"."updated_at" AS t1_r7 FROM "categories" LEFT OUTER JOIN "items" ON "items"."category_id" = "categories"."id" WHERE (item.status = 0 AND ratings.rating < 4) ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.4ms)[0m  [1m[34mSELECT "items".* FROM "items" INNER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating < 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mCategory Load (0.2ms)[0m  [1m[34mSELECT "categories".* FROM "categories" GROUP BY "categories"."id" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.5ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE "items"."category_id" IN (?, ?, ?, ?, ?) ORDER BY "items"."created_at" ASC[0m  [["category_id", 1], ["category_id", 2], ["category_id", 3], ["category_id", 4], ["category_id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."rateable_type" AS t1_r2, "ratings"."rateable_id" AS t1_r3, "ratings"."created_at" AS t1_r4, "ratings"."updated_at" AS t1_r5 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >=4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "categories"."id" AS t1_r0, "categories"."name" AS t1_r1, "categories"."created_at" AS t1_r2, "categories"."updated_at" AS t1_r3, "ratings"."id" AS t2_r0, "ratings"."rating" AS t2_r1, "ratings"."rateable_type" AS t2_r2, "ratings"."rateable_id" AS t2_r3, "ratings"."created_at" AS t2_r4, "ratings"."updated_at" AS t2_r5 FROM "items" LEFT OUTER JOIN "categories" ON "categories"."id" = "items"."category_id" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (items.status = 0 AND ratings.rating < 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "categories"."id" AS t1_r0, "categories"."name" AS t1_r1, "categories"."created_at" AS t1_r2, "categories"."updated_at" AS t1_r3, "ratings"."id" AS t2_r0, "ratings"."rating" AS t2_r1, "ratings"."rateable_type" AS t2_r2, "ratings"."rateable_id" AS t2_r3, "ratings"."created_at" AS t2_r4, "ratings"."updated_at" AS t2_r5 FROM "items" LEFT OUTER JOIN "categories" ON "categories"."id" = "items"."category_id" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (items.status = 0 AND ratings.rating < 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "categories"."id" AS t1_r0, "categories"."name" AS t1_r1, "categories"."created_at" AS t1_r2, "categories"."updated_at" AS t1_r3, "ratings"."id" AS t2_r0, "ratings"."rating" AS t2_r1, "ratings"."rateable_type" AS t2_r2, "ratings"."rateable_id" AS t2_r3, "ratings"."created_at" AS t2_r4, "ratings"."updated_at" AS t2_r5 FROM "items" LEFT OUTER JOIN "categories" ON "categories"."id" = "items"."category_id" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (items.status = 0 AND ratings.rating < 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mItem Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items" WHERE (price >50)[0m
+  [1m[36mItem Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "items".* FROM "items" ORDER BY "items"."created_at" ASC) subquery_for_count[0m
+  [1m[36mModifier Load (0.2ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC, "modifiers"."name" DESC[0m
+Started GET "/" for 127.0.0.1 at 2023-03-14 12:28:12 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 727)
+Completed 200 OK in 20ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5959)
+
+
