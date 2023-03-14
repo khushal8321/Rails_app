@@ -443,11 +443,213 @@ Migrating to CreateRatings (20230311112652)
   [1m[36mItem Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "items" WHERE (price >50)[0m
   [1m[36mItem Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM (SELECT DISTINCT "items".* FROM "items" ORDER BY "items"."created_at" ASC) subquery_for_count[0m
   [1m[36mModifier Load (0.2ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC, "modifiers"."name" DESC[0m
-Started GET "/" for 127.0.0.1 at 2023-03-14 12:28:12 +0530
+Started GET "/" for 127.0.0.1 at 2023-03-14 10:59:26 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CategoryController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering category/index.html.erb within layouts/application
+  Rendered category/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 371)
+  Rendered layout layouts/application.html.erb (Duration: 414.6ms | Allocations: 96978)
+Completed 200 OK in 435ms (Views: 420.7ms | ActiveRecord: 0.0ms | Allocations: 102394)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-14 10:59:59 +0530
+Processing by CategoryController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering category/index.html.erb within layouts/application
+  Rendered category/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2899)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3906)
+
+
+Started GET "/" for 127.0.0.1 at 2023-03-14 11:03:44 +0530
+Processing by CategoryController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering category/index.html.erb within layouts/application
+  Rendered category/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2279)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2353)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.9ms | Allocations: 8270)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>category</h1>
+<ul>
+<%= categories.each do |category| %>
+
+<li>
+  <%= category.name %>
+</li>
+</ul>
+):
+1:    <h1>category</h1>
+2:    <ul>
+3:    <%= categories.each do |category| %>
+4:    
+5:    <li>
+6:      <%= category.name %>
+7:    </li>
+8:    </ul>
+  
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-03-14 11:03:45 +0530
+Processing by CategoryController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering category/index.html.erb within layouts/application
+  Rendered category/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1092)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1164)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 1517)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>category</h1>
+<ul>
+<%= categories.each do |category| %>
+
+<li>
+  <%= category.name %>
+</li>
+</ul>
+):
+1:    <h1>category</h1>
+2:    <ul>
+3:    <%= categories.each do |category| %>
+4:    
+5:    <li>
+6:      <%= category.name %>
+7:    </li>
+8:    </ul>
+  
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+app/views/category/index.html.erb:10: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-03-14 11:04:35 +0530
+Processing by CategoryController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering category/index.html.erb within layouts/application
+  Rendered category/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 4322)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 4394)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 5434)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `categories' for #<ActionView::Base:0x0000000000eda8>
+Did you mean?  @categories):
+    1: <h1>category</h1>
+    2: <ul>
+    3: <%= categories.each do |category| %>
+    4: 
+    5: <li>
+    6:   <%= category.name %>
+  
+app/views/category/index.html.erb:3
+Started GET "/" for 127.0.0.1 at 2023-03-14 11:04:49 +0530
+Processing by CategoryController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering category/index.html.erb within layouts/application
+  Rendered category/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 4278)
+  Rendered layout layouts/application.html.erb (Duration: 13.2ms | Allocations: 4351)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 5397)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `category' for #<ActionView::Base:0x0000000000f0c8>
+Did you mean?  @categories):
+    1: <h1>category</h1>
+    2: <ul>
+    3: <%= category.each do |category| %>
+    4: 
+    5: <li>
+    6:   <%= category.name %>
+  
+app/views/category/index.html.erb:3
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" ORDER BY "items"."created_at" ASC[0m
+  [1m[36mItemmodifier Load (0.3ms)[0m  [1m[34mSELECT "itemmodifiers".* FROM "itemmodifiers" ORDER BY "itemmodifiers"."created_at" ASC[0m
+  [1m[36mCategory Load (0.3ms)[0m  [1m[34mSELECT "categories".* FROM "categories" ORDER BY "categories"."created_at" ASC[0m
+  [1m[36mModifier Load (0.4ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mItem Load (0.2ms)[0m  [1m[34mSELECT "items".* FROM "items" WHERE (name like 'a%') ORDER BY "items"."created_at" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by Rails::WelcomeController#index as HTML
-  Rendering /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /usr/share/rvm/gems/ruby-3.0.0/gems/railties-7.0.4.2/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.1ms | Allocations: 727)
-Completed 200 OK in 20ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 5959)
-
-
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "ratings"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItemmodifiers (20230311112636)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE "itemmodifiers"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230311112636"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItemmodifiers (20230311112636)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItemmodifiers (20230311112636)
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateRatings (20230311112652)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "ratings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "rating" integer, "rateable_type" varchar, "rateable_id" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_ratings_on_rateable" ON "ratings" ("rateable_type", "rateable_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230311112652"]]
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateItemModifiers (20230314111222)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "item_modifiers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_id" integer, "modifier_id" integer, "status" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230314111222"]]
+  [1m[36mTRANSACTION (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItemModifier Load (0.2ms)[0m  [1m[34mSELECT "item_modifiers".* FROM "item_modifiers"[0m
+  [1m[36mModifier Load (0.4ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mItemModifier Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "rating_id" AS "rating_id" FROM "item_modifiers" GROUP BY "rating_id" ORDER BY "item_modifiers"."created_at" ASC[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "ratings"."id" AS t1_r0, "ratings"."rating" AS t1_r1, "ratings"."rateable_type" AS t1_r2, "ratings"."rateable_id" AS t1_r3, "ratings"."created_at" AS t1_r4, "ratings"."updated_at" AS t1_r5 FROM "items" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (ratings.rating >2) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[34mSELECT "items"."id" AS t0_r0, "items"."name" AS t0_r1, "items"."price" AS t0_r2, "items"."category_id" AS t0_r3, "items"."stock_quantity" AS t0_r4, "items"."status" AS t0_r5, "items"."created_at" AS t0_r6, "items"."updated_at" AS t0_r7, "categories"."id" AS t1_r0, "categories"."name" AS t1_r1, "categories"."created_at" AS t1_r2, "categories"."updated_at" AS t1_r3, "ratings"."id" AS t2_r0, "ratings"."rating" AS t2_r1, "ratings"."rateable_type" AS t2_r2, "ratings"."rateable_id" AS t2_r3, "ratings"."created_at" AS t2_r4, "ratings"."updated_at" AS t2_r5 FROM "items" LEFT OUTER JOIN "categories" ON "categories"."id" = "items"."category_id" LEFT OUTER JOIN "ratings" ON "ratings"."rateable_type" = ? AND "ratings"."rateable_id" = "items"."id" WHERE (items.status = 0 AND ratings.rating < 4) ORDER BY "items"."created_at" ASC[0m  [["rateable_type", "Item"]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItemModifiers (20230314111222)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE "item_modifiers"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.4ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230314111222"]]
+  [1m[36mTRANSACTION (57.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateItemModifiers (20230314130519)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "item_modifiers" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "item_id" integer, "modifier_id" integer, "status" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230314130519"]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mModifier Load (0.3ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mItemModifier Load (0.2ms)[0m  [1m[34mSELECT "item_modifiers".* FROM "item_modifiers" ORDER BY "item_modifiers"."created_at" ASC[0m
+  [1m[36mModifier Load (0.3ms)[0m  [1m[34mSELECT "modifiers".* FROM "modifiers" ORDER BY "modifiers"."created_at" DESC[0m
+  [1m[36mItemModifier Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "rating_id" AS "rating_id" FROM "item_modifiers" GROUP BY "rating_id" ORDER BY "item_modifiers"."created_at" ASC[0m
+  [1m[36mItemModifier Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "rating_id" AS "rating_id" FROM "item_modifiers" GROUP BY "rating_id" ORDER BY "item_modifiers"."created_at" ASC[0m
+  [1m[36mItemModifier Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "rating_id" AS "rating_id" FROM "item_modifiers" GROUP BY "rating_id" ORDER BY "item_modifiers"."created_at" ASC[0m
+  [1m[36mItemModifier Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) AS "count_all", "rating_id" AS "rating_id" FROM "item_modifiers" GROUP BY "rating_id" ORDER BY "item_modifiers"."created_at" ASC[0m
