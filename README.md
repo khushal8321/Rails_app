@@ -1,1 +1,10 @@
-# Rails_app
+# Rails_app![1](https://user-images.githubusercontent.com/126074235/224937781-8c91ac75-3489-4131-aa20-b09b70abc4b6.png)
+![2](https://user-images.githubusercontent.com/126074235/224937858-d6217ee6-7446-4736-8c4c-dfadfca4b813.png)
+![3](https://user-images.githubusercontent.com/126074235/224937901-a004f9b7-53f4-4e46-a903-9f135f51d01c.png)
+![4](https://user-images.githubusercontent.com/126074235/224937933-50bb4dfa-471f-4b1c-b0f4-a3461f46ffd2.png)
+![5](https://user-images.githubusercontent.com/126074235/224937964-8b41305d-13e2-4264-a18d-bc465e69f8c5.png)
+![6](https://user-images.githubusercontent.com/126074235/224937999-130ad9c6-9747-4f8c-862e-3bc224f100b0.png)
+![7](https://user-images.githubusercontent.com/126074235/224938032-bb1aa839-e427-4075-86c9-1a0207667f2f.png)
+![8](https://user-images.githubusercontent.com/126074235/224938047-6c52ae47-a5cb-4efc-9230-de26f9543a24.png)
+![9](https://user-images.githubusercontent.com/126074235/224938071-43c11245-9ac3-4145-8280-61a653d02d71.png)
+![10](https://user-images.githubusercontent.com/126074235/224938136-116f7135-8556-46b5-8966-1390e412a64a.png)
